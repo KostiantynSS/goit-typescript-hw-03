@@ -25,8 +25,8 @@ class Person{
   constructor(private key:Key){}
 
     
-    getKey():number {
-    return this.key.getSignature()}
+    getKey():Key {
+    return this.key)}
 }
 
 abstract class House{
@@ -46,9 +46,9 @@ abstract openDoor(key:Key):void
  class MyHouse extends House{
    
     openDoor(key): void {
-        if (key === this.key.getSignature()) {
+        if (key.getSignature() === this.key.getSignature()) {
           this.door = true;
-          this.tenants.push(key)
+         
 
         }
       }
