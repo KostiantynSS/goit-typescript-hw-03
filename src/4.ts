@@ -26,7 +26,7 @@ class Person{
 
     
     getKey():Key {
-    return this.key)}
+    return this.key}
 }
 
 abstract class House{
