@@ -17,8 +17,8 @@
 
 // Наприклад, ось так:
 class Key{
-private signature:number
-constructor(){this.signature=Math.random()}
+private signature:number=Math.random();
+
 getSignature():number{return this.signature}
 }
 class Person{
